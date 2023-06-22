@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    //инициализация указателя на целочисленное значение
+    int *a = new int(50);
+    // переменной b присваивается значение,
+    // хранящееся по адресу указателя a
+    int b = *a;
+    cout << "adress \t *a\t b\n";
+    
+    cout << a << "\t" << *a << "\t" << b << endl;
+    *a = 100;
+    return 0;
+}
